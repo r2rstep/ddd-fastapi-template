@@ -1,0 +1,7 @@
+{
+  "project_name": "A project",
+  "project_slug": "a_project",
+  "email": "mail@aproject.com",
+  "aggregate_name_snake": "some_aggregate",
+  "aggregate_name_camel": "{{cookiecutter.aggregate_name_snake.split('_')|join(' ')|title|replace(' ', '')}}"
+}
