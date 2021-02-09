@@ -1,8 +1,9 @@
 {
   "project_name": "A project",
-  "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '_')}}",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "author": "Artur Stepniak",
-  "email": "mail@aproject.com",
+  "domain": "aproject.com",
+  "email": "mail@{{ cookiecutter.domain }}",
   "aggregate_name_snake": "some_aggregate",
-  "aggregate_name_camel": "{{cookiecutter.aggregate_name_snake.split('_')|join(' ')|title|replace(' ', '')}}"
+  "aggregate_name_camel": "{{ cookiecutter.aggregate_name_snake.split('_')|join(' ')|title|replace(' ', '') }}"
 }
