@@ -19,5 +19,5 @@ def on_startup():
           response_model={{cookiecutter.aggregate_name_camel}}Resp,
           status_code=status.HTTP_201_CREATED)
 async def create_aggreg(cmd: Create{{cookiecutter.aggregate_name_camel}}, db: Session = Depends(get_db)):
-    aggreg = await service.create_aggreg(db, cmd)
+    {{ cookiecutter.aggregate_name_snake }} = await service.create_{{ cookiecutter.aggregate_name_snake }}(db, cmd)
     return {{cookiecutter.aggregate_name_camel}}Resp(data=aggreg)
