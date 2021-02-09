@@ -18,7 +18,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     ports:
-      - "5050:5050"
+      - "5050:${PGADMIN_LISTEN_PORT}"
     networks:
       - pg
     depends_on:
