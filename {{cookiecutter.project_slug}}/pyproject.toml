@@ -27,6 +27,6 @@ markers = [
 ]
 
 env_files = [
-    ".env",
     ".dev.env",
+    ".env",
 ]
