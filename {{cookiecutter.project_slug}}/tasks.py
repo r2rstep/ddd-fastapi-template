@@ -6,7 +6,7 @@ from invoke import task
 pprint = partial(print, "-" * 3)
 
 
-LINE_LENGTH = "90"
+LINE_LENGTH = "150"
 
 CODE = ["."]
 TESTS = ["tests"]
