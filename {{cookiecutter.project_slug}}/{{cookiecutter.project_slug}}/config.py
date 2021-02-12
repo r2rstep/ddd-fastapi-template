@@ -4,6 +4,8 @@ from pydantic import BaseSettings, PostgresDsn, validator
 
 
 class Config(BaseSettings):
+    TOKEN_SECRET: str
+    TOKEN_URL: str = '/auth/login'
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_SERVER: str

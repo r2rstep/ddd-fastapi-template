@@ -1,6 +1,6 @@
 from typing import Generator
 
-from ..adapters.db.session import Session
+from {{ cookiecutter.project_slug }}.adapters.db.session import Session
 
 
 def get_db() -> Generator:
